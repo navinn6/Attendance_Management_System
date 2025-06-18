@@ -1,0 +1,95 @@
+1) http://127.0.0.1:8000/api/token/  (post)
+{
+  "username": "admin",
+  "password": "admin@123"
+}
+
+-----------------------------------------------------------------
+2) http://127.0.0.1:8000/api/departments/    (get)
+
+3) http://127.0.0.1:8000/api/departments/    (post)
+{
+  "department_name": "Music Department"
+}
+
+4) http://127.0.0.1:8000/api/departments/6/  (patch)
+{
+  "department_name": "Music Department"
+}
+------------------------------------------------------------------
+5) http://127.0.0.1:8000/api/courses/    (get)
+
+6) http://127.0.0.1:8000/api/courses/    (post)
+{
+  "course_name": "MBA",
+  "course_code": "MBA01",
+  "department_id": "7"
+}
+
+7) http://127.0.0.1:8000/api/courses/4/  (patch)
+{
+  "course_name": "MBA",
+  "course_code": "MBA01",
+  "department_id": "7"
+}
+-------------------------------------------------------------------
+8) http://127.0.0.1:8000/api/users/    (get)
+
+9) http://127.0.0.1:8000/api/users/    (post)
+{
+    "full_name": "Youwan Pandey",
+    "username": "Youwan",
+    "email": "Youwan@gmail.com",
+    "password":"Youwan07",
+    "user_type": "student",
+    "is_active": true
+}
+
+10) http://127.0.0.1:8000/api/users/1/  (patch)
+{
+   "full_name": "Navin Kumar Pandey",
+    "username": "navin07",
+    "email": "demo@gmail.com",
+    "user_type": "student",
+    "is_active": true
+}
+-------------------------------------------------------------------
+11) http://127.0.0.1:8000/api/students/    (get)
+
+12) http://127.0.0.1:8000/api/students/    (post)
+{
+    "roll_number": "68063",
+    "session": "2024 to 2025",
+    "year_of_study": 2025,
+    "user": 2,
+    "department_id": 2,
+    "course_id": 3
+}
+
+13) http://127.0.0.1:8000/api/students/2/  (patch)
+{
+    "roll_number": "68063",
+    "session": "2024 to 2025",
+    "year_of_study": 2025,
+    "user": 2,
+    "department_id": 2,
+    "course_id": 3
+}
+-------------------------------------------------------------------
+14) http://127.0.0.1:8000/api/attendance/    (get)
+
+15) http://127.0.0.1:8000/api/attendance/    (post)
+{
+    "present_absent": true,
+    "student_id": 2,
+    "course_id": 3,
+    "Department_id": 2
+}
+
+16) http://127.0.0.1:8000/api/attendance/5/  (patch)
+{
+    "present_absent": true,
+    "student_id": 2,
+    "course_id": 3,
+    "Department_id": 3
+}
